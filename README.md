@@ -123,4 +123,4 @@ joblib
 
 Licensed under the [MIT License](LICENSE).
 
-<div align="center">Made with ❤️ by [Your Name](https://github.com/yourusername)</div>
+<div align="center">Made with ❤️ by [Siddhraj Gupta](https://github.com/Siddhraj7347</div>
