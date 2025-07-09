@@ -2,6 +2,7 @@
 
 # 🔍 Credit Risk Predictor  
 ### Using Random Forest to Predict Creditworthiness  
+
 ![Python](https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python)
 ![Streamlit](https://img.shields.io/badge/Built%20With-Streamlit-ff4b4b?style=for-the-badge&logo=streamlit)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
@@ -22,7 +23,7 @@ Built with 🧠 `scikit-learn`, 🖼 `Streamlit`, and styled using **custom dark
 ## 🧠 Model Info
 
 - **Dataset**: [German Credit Data – UCI ML Repo](https://archive.ics.uci.edu/ml/datasets/statlog+(german+credit+data))
-- **Model**: Random Forest Classifier (Sklearn)
+- **Model**: Random Forest Classifier (`scikit-learn`)
 - **Features**: 20 attributes (age, employment, credit history, etc.)
 - **Target**: Good or Bad Credit Risk
 
@@ -39,69 +40,16 @@ Built with 🧠 `scikit-learn`, 🖼 `Streamlit`, and styled using **custom dark
 
 ## 📷 Demo Preview
 
-> Replace this with your own gif or webm  
+> Replace this with your own gif or video  
 <img src="demo.gif" alt="App demo" width="100%"/>
 
 ---
 
 ## 🛠 Installation
 
-Clone the repo and install dependencies.
+Clone the repo and install dependencies:
 
 ```bash
 git clone https://github.com/yourusername/credit-risk-predictor.git
 cd credit-risk-predictor
 pip install -r requirements.txt
-▶️ Usage
-Run the Streamlit app:
-
-bash
-Copy
-Edit
-streamlit run app.py
-⚙️ Project Structure
-text
-Copy
-Edit
-📁 credit-risk-predictor
-├── app.py                  # Main Streamlit app
-├── model/
-│   └── rf_model.pkl        # Trained Random Forest model
-├── data/
-│   └── german_credit.csv   # Raw dataset
-├── requirements.txt
-└── README.md
-📈 Sample Prediction Logic
-python
-Copy
-Edit
-import pandas as pd
-import joblib
-
-# Load trained model
-model = joblib.load("model/rf_model.pkl")
-
-# Example input
-sample = pd.DataFrame([{
-    'age': 35,
-    'duration': 24,
-    'credit_amount': 3000,
-    'employment': '>=7 years',
-    ...
-}])
-
-# Predict
-prediction = model.predict(sample)
-print("Creditworthy" if prediction[0] == 1 else "Not Creditworthy")
-🧾 License
-Licensed under the MIT License.
-
-<div align="center"> Made with ❤️ by [Your Name](https://github.com/yourusername) </div> ```
-📦 requirements.txt
-text
-Copy
-Edit
-streamlit
-pandas
-scikit-learn
-joblib
