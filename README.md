@@ -46,7 +46,57 @@ Built with 🧠 `scikit-learn`, 🖼 `Streamlit`, and styled using **custom dark
 ---
 
 ## 🛠 Installation
+▶️ Usage
+Run the Streamlit app:
 
+bash
+Copy
+Edit
+streamlit run app.py
+⚙️ Project Structure
+bash
+Copy
+Edit
+📁 credit-risk-predictor
+├── app.py                  # Main Streamlit app
+├── model/
+│   └── rf_model.pkl        # Trained Random Forest model
+├── data/
+│   └── german_credit.csv   # Raw dataset
+├── requirements.txt
+└── README.md
+📈 Sample Prediction Logic
+python
+Copy
+Edit
+import pandas as pd
+import joblib
+
+# Load trained model
+model = joblib.load("model/rf_model.pkl")
+
+# Example input
+sample = pd.DataFrame([{
+    'age': 35,
+    'duration': 24,
+    'credit_amount': 3000,
+    'employment': '>=7 years',
+    # ... add other features
+}])
+
+# Predict
+prediction = model.predict(sample)
+print("Creditworthy" if prediction[0] == 1 else "Not Creditworthy")
+📦 requirements.txt
+text
+Copy
+Edit
+streamlit
+pandas
+scikit-learn
+joblib
+🧾 License
+Licensed under the MIT License.
 Clone the repo and install dependencies:
 
 ```bash
