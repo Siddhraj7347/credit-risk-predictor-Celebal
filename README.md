@@ -1,3 +1,4 @@
+
 <div align="center">
 
 # 🔍 Credit Risk Predictor  
@@ -46,17 +47,30 @@ Built with 🧠 `scikit-learn`, 🖼 `Streamlit`, and styled using **custom dark
 ---
 
 ## 🛠 Installation
-▶️ Usage
+
+Clone the repo and install dependencies:
+
+```bash
+git clone https://github.com/yourusername/credit-risk-predictor.git
+cd credit-risk-predictor
+pip install -r requirements.txt
+```
+
+---
+
+## ▶️ Usage
+
 Run the Streamlit app:
 
-bash
-Copy
-Edit
+```bash
 streamlit run app.py
-⚙️ Project Structure
-bash
-Copy
-Edit
+```
+
+---
+
+## ⚙️ Project Structure
+
+```
 📁 credit-risk-predictor
 ├── app.py                  # Main Streamlit app
 ├── model/
@@ -65,10 +79,13 @@ Edit
 │   └── german_credit.csv   # Raw dataset
 ├── requirements.txt
 └── README.md
-📈 Sample Prediction Logic
-python
-Copy
-Edit
+```
+
+---
+
+## 📈 Sample Prediction Logic
+
+```python
 import pandas as pd
 import joblib
 
@@ -87,19 +104,23 @@ sample = pd.DataFrame([{
 # Predict
 prediction = model.predict(sample)
 print("Creditworthy" if prediction[0] == 1 else "Not Creditworthy")
-📦 requirements.txt
-text
-Copy
-Edit
+```
+
+---
+
+## 📦 requirements.txt
+
+```text
 streamlit
 pandas
 scikit-learn
 joblib
-🧾 License
-Licensed under the MIT License.
-Clone the repo and install dependencies:
+```
 
-```bash
-git clone https://github.com/yourusername/credit-risk-predictor.git
-cd credit-risk-predictor
-pip install -r requirements.txt
+---
+
+## 🧾 License
+
+Licensed under the [MIT License](LICENSE).
+
+<div align="center">Made with ❤️ by [Your Name](https://github.com/yourusername)</div>
