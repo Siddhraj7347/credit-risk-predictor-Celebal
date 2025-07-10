@@ -39,13 +39,6 @@ Built with 🧠 `scikit-learn`, 🖼 `Streamlit`, and styled using **custom dark
 
 ---
 
-## 📷 Demo Preview
-
-> Replace this with your own gif or video  
-<img src="demo.gif" alt="App demo" width="100%"/>
-
----
-
 ## 🛠 Installation
 
 Clone the repo and install dependencies:
